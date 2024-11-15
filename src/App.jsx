@@ -12,7 +12,7 @@ function App() {
         <CCICard />
       </div> */}
       <div className="cci-card-container">
-        <CCIExpandableCard activeColor="red" />
+        <CCIExpandableCard activeColor="#141516" />
         <CCIExpandableCard />
         <CCIExpandableCard activeColor="#2563EB" />
       </div>
@@ -21,7 +21,7 @@ function App() {
         <CCIFlipCard />
       </div> */}
       <div className="cci-card-container">
-        <CCIOverlayCard activeColor="red" />
+        <CCIOverlayCard activeColor="#141516" />
         <CCIOverlayCard />
         <CCIOverlayCard activeColor="#2563EB" />
       </div>
