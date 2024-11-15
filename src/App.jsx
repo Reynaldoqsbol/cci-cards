@@ -7,21 +7,23 @@ import { CCIOverlayCard } from "./components/cci-overlay-card";
 function App() {
   return (
     <div className="container">
-      <div className="cci-card-container">
+      {/* <div className="cci-card-container">
         <CCICard />
         <CCICard />
-      </div>
+      </div> */}
       <div className="cci-card-container">
+        <CCIExpandableCard activeColor="red" />
         <CCIExpandableCard />
-        <CCIExpandableCard />
+        <CCIExpandableCard activeColor="#2563EB" />
       </div>
-      <div className="cci-card-container">
+      {/* <div className="cci-card-container">
         <CCIFlipCard />
         <CCIFlipCard />
-      </div>
+      </div> */}
       <div className="cci-card-container">
+        <CCIOverlayCard activeColor="red" />
         <CCIOverlayCard />
-        <CCIOverlayCard />
+        <CCIOverlayCard activeColor="#2563EB" />
       </div>
     </div>
   );

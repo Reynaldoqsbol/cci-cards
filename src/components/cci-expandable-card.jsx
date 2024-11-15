@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./cci-expandable-card.css";
 
-const CCIExpandableCard = () => {
+const CCIExpandableCard = ({ activeColor = "#acd040" }) => {
   const [expanded, setExpanded] = React.useState(false);
   return (
     <div
@@ -15,6 +15,7 @@ const CCIExpandableCard = () => {
         transition={{ type: "spring", stiffness: 250 }}
         style={{
           transform: expanded ? "translateY(0)" : "translateY(20px)",
+          backgroundColor: activeColor,
         }}
       >
         <span>Contraseña: XCEWREx</span>
